@@ -38,19 +38,13 @@ public:
 		this->y = y;
 		cout << "Constructor:\t\t" << this << endl;
 	}
-	Point(const Point& other)
-	{
-		this->x = other.x;
-		this->y = other.y;
-		cout << "CopyConstructor:\t" << this << endl;
-	}
 	~Point()
 	{
 		cout << "Destructor:\t\t" << this << endl;
 	}
 
 	//						Methods:
-	double distance(const Point& other)const
+	double distance(Point other)
 	{
 		double x_distance = this->x - other.x;
 		double y_distance = this->y - other.y;
@@ -64,7 +58,7 @@ public:
 	}
 };
 
-double distance(const Point& A, const Point& B)
+double distance(Point A, Point B)
 {
 	/*double x_distance = A.get_x() - B.get_x();
 	double y_distance = A.get_y() - B.get_y();
@@ -75,8 +69,7 @@ double distance(const Point& A, const Point& B)
 }
 
 //#define STRUCT_POINT
-#define DISTANCE
-//#define CONSTRUCTORS_CHECK
+//#define DISTANCE
 
 void main()
 {
@@ -109,38 +102,26 @@ void main()
 	B.set_x(4);
 	B.set_y(5);
 	//Метод distance - возвращает расстояние до указанной точки.
-	cout << "\n-----------------------------------\n";
 	cout << A.distance(B) << endl;
-	cout << "\n-----------------------------------\n";
 	cout << B.distance(A) << endl;
-	cout << "\n-----------------------------------\n";
 	cout << distance(A, B) << endl;
-	cout << "\n-----------------------------------\n";
 	cout << distance(B, A) << endl;
-	cout << "\n-----------------------------------\n";
 	//Написать функцию distance(), которая возвращает расстояние между двумя точками.  
 #endif // DISTANCE
-
-#ifdef CONSTRUCTORS_CHECK
-			/*for (int i = 0; i < 10; i++)
-{
-	cout << i << "\t";
-}*/
-//cout << i << endl;
-/*cout << endl;
-{
-	int a;
-}
-cout << a << endl;*/
+	/*for (int i = 0; i < 10; i++)
+	{
+		cout << i << "\t";
+	}*/
+	//cout << i << endl;
+	/*cout << endl;
+	{
+		int a;
+	}
+	cout << a << endl;*/
 	Point A;		//Default constructor
 	A.print();
 	Point B(2, 3);
 	B.print();
-	Point C = B;	//Copy constructor
-	C.print();
-	Point D(C);		//Copy constructor
-#endif // CONSTRUCTORS_CHECK
-
 }
 
 /*
@@ -178,6 +159,5 @@ Point();	//Конструктор класса Point
 
 1. Конструктор по умолчанию (Default constructor) - это конструктор, который
    может быть вызван без параметров.
-2. Конструктор копирования  (CopyConstructor) - это конструктор, который копирует объект.
 ---------------------------------------------------------------
 */
