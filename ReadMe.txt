@@ -11,3 +11,9 @@ https://www.youtube.com/watch?v=M3PCj8RLogI&list=PLeqyOOqxeiIMLcXra1mcQQ7NeaM6qe
 TODO:
 Реализовать класс Fraction, описывающий простую дробь.
 В классе должны быть все необходимые методы и операторы.
+1. Арифметические операторы: +, -, *, /;
+2. Increment/Decrement;
+3. Составные присваивания: +=, -=, *=, /=;
+4. Операторы сравнения: ==, !=, >, <, >=, <=;
+5. Оператор ввода: Fraction A; cin >> A;
+Почитать: http://cplusplus.com/doc/tutorial/typecasting/
