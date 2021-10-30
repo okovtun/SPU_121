@@ -7,6 +7,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "IntroductionToOOP", "Introd
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Fraction", "Fraction\Fraction.vcxproj", "{7DBF36B1-FA63-40EB-B723-DF044DFE999E}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TaskForControlStructures", "TaskForControlStructures\TaskForControlStructures.vcxproj", "{B64BB57B-81E0-4B0C-B8D9-8051D80A3FE1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -31,6 +33,14 @@ Global
 		{7DBF36B1-FA63-40EB-B723-DF044DFE999E}.Release|x64.Build.0 = Release|x64
 		{7DBF36B1-FA63-40EB-B723-DF044DFE999E}.Release|x86.ActiveCfg = Release|Win32
 		{7DBF36B1-FA63-40EB-B723-DF044DFE999E}.Release|x86.Build.0 = Release|Win32
+		{B64BB57B-81E0-4B0C-B8D9-8051D80A3FE1}.Debug|x64.ActiveCfg = Debug|x64
+		{B64BB57B-81E0-4B0C-B8D9-8051D80A3FE1}.Debug|x64.Build.0 = Debug|x64
+		{B64BB57B-81E0-4B0C-B8D9-8051D80A3FE1}.Debug|x86.ActiveCfg = Debug|Win32
+		{B64BB57B-81E0-4B0C-B8D9-8051D80A3FE1}.Debug|x86.Build.0 = Debug|Win32
+		{B64BB57B-81E0-4B0C-B8D9-8051D80A3FE1}.Release|x64.ActiveCfg = Release|x64
+		{B64BB57B-81E0-4B0C-B8D9-8051D80A3FE1}.Release|x64.Build.0 = Release|x64
+		{B64BB57B-81E0-4B0C-B8D9-8051D80A3FE1}.Release|x86.ActiveCfg = Release|Win32
+		{B64BB57B-81E0-4B0C-B8D9-8051D80A3FE1}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
